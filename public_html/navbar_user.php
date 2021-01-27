@@ -4,10 +4,12 @@
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Sign IN</a>
+                    <a class="nav-link">
+                        <?php session_start();
+                        echo $_SESSION['name'] ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="register.php">Sign Up</a>
+                    <a class="nav-link" href="login.php">Log Out</a>
                 </li>
             </ul>
         </div>
