@@ -1,5 +1,7 @@
 <?php include('header.php') ?>
 <?php include('data.php') ?>
+<?php session_start();
+session_destroy() ?>
 <?php include('navbar.php') ?>
 
 <div id="signIn">

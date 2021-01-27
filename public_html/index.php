@@ -1,7 +1,12 @@
 <?php include('header.php') ?>
 <?php include('data.php') ?>
-<?php include('navbar.php') ?>
+<?php
+session_start();
 
+if (!isset($_SESSION['user_logged_in']) || ($_SESSION['user_logged_in'] == "")) {
+    header("Location: login.php");
+}
+?>
 <div id="panel">
     <h1>Todo List</h1>
     <div id="todo-list">
