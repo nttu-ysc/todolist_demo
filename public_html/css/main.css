@@ -50,7 +50,7 @@
     display: none;
 }
 
-#signIn {
+#signIn, #signUp {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 3em;
@@ -60,14 +60,17 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
-#signIn h2 {
+#signIn h2, #signUp h2 {
     font-weight: lighter;
     font-size: 50px;
     text-align: center;
 }
 
-#signIn input {
+#signIn input, #signUp input {
     display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
     width: 320px;
     height: 50px;
     background: rgba(0, 0, 0, 0.3);
@@ -75,18 +78,15 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
     font-weight: lighter;
     font-size: 14px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
 }
 
-#signIn button {
+#signIn button, #signUp button {
+    border: 0;
+    border-radius: 5px;
     width: 322px;
     height: 50px;
     font-size: 16px;
     background: #000;
     font-weight: lighter;
     color: #fff;
-    border: 0;
-    border-radius: 5px;
 }
