@@ -52,7 +52,7 @@ try {
     exit;
 }
 
-$sql = 'INSERT INTO users(`name`, email, `password`) VALUE(:name, :email, :password)';
+$sql = 'INSERT INTO users(`name`, email, `password`) VALUES(:name, :email, :password)';
 $statement = $pdo->prepare($sql);
 $statement->bindValue(':name', $name, PDO::PARAM_STR);
 $statement->bindValue(':email', $email, PDO::PARAM_STR);
