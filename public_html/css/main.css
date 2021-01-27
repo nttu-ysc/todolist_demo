@@ -91,11 +91,11 @@
     color: #fff;
 }
 
-#signUp .errors {
+#signUp .errors, #signIn .errors {
     background-color: rgba(128, 128, 128, 0.795);
     display: none;
 }
 
-#signUp .errors.open {
+#signUp .errors.open, #signIn .errors.open {
     display: block;
 }

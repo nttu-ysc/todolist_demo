@@ -4,13 +4,12 @@
 
 <div id="signIn">
     <form>
-        <h2>Sign Up</h2>
+        <h2>Sign In</h2>
         <div class="errors">
             <ul>
                 <li></li>
             </ul>
         </div>
-        <h2>Sign In</h2>
         <input type="email" name="email" placeholder="Enter E-mail">
         <input type="password" name="password" placeholder="Enter Password">
         <button class="btn">Sign In</button>
