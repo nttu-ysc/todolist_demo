@@ -1,5 +1,7 @@
 <?php include('header.php') ?>
 <?php include('data.php') ?>
+<?php include('navbar.php') ?>
+
 <div id="signIn">
     <form>
         <h2>Sign In</h2>

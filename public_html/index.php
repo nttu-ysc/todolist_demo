@@ -1,5 +1,7 @@
 <?php include('header.php') ?>
 <?php include('data.php') ?>
+<?php include('navbar.php') ?>
+
 <div id="panel">
     <h1>Todo List</h1>
     <div id="todo-list">
