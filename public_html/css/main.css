@@ -90,3 +90,12 @@
     font-weight: lighter;
     color: #fff;
 }
+
+#signUp .errors {
+    background-color: rgba(128, 128, 128, 0.795);
+    display: none;
+}
+
+#signUp .errors.open {
+    display: block;
+}

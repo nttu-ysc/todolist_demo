@@ -5,11 +5,16 @@
 <div id="signUp">
     <form>
         <h2>Sign Up</h2>
-        <input type="text" placeholder="Enter User Name">
-        <input type="text" placeholder="Enter E-mail">
-        <input type="text" placeholder="Enter Password">
-        <input type="text" placeholder="Confirm Password">
-        <button class="btn">Sign Up</button>
+        <div class="errors">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <input type="text" name="name" placeholder="Enter User Name">
+        <input type="email" name="email" placeholder="Enter E-mail">
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <button type="submit" class="btn">Sign Up</button>
     </form>
 </div>
 <?php include('footer.php') ?>
