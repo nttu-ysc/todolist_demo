@@ -13,13 +13,14 @@ try {
     echo "Database connection failed.";
     exit;
 }
-
-$sql = 'INSERT INTO todos (content, iscomplete, `order`)
-        VALUES (:content, :iscomplete, :order)';
+session_start();
+$sql = 'INSERT INTO todos (content, iscomplete, `order`, user_id)
+        VALUES (:content, :iscomplete, :order, :user_id)';
 $statement = $pdo->prepare($sql);
-$statement->bindValue('content', $_POST['content'], PDO::PARAM_STR);
-$statement->bindValue('iscomplete', 0, PDO::PARAM_INT);
-$statement->bindValue('order', $_POST['order'], PDO::PARAM_INT);
+$statement->bindValue(':content', $_POST['content'], PDO::PARAM_STR);
+$statement->bindValue(':iscomplete', 0, PDO::PARAM_INT);
+$statement->bindValue(':order', $_POST['order'], PDO::PARAM_INT);
+$statement->bindValue(':user_id', $_SESSION['id'], PDO::PARAM_INT);
 $result = $statement->execute();
 
 if ($result) {
